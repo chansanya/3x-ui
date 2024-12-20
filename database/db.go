@@ -20,8 +20,8 @@ import (
 var db *gorm.DB
 
 const (
-	defaultUsername = "admin"
-	defaultPassword = "admin"
+	defaultUsername = "super"
+	defaultPassword = "super998"
 	defaultSecret   = ""
 )
 
