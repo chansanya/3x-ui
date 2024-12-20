@@ -3,9 +3,12 @@ version: "3"
 
 services:
   3x-ui:
-    image: ghcr.io/mhsanaei/3x-ui:latest
+    #image: ghcr.io/mhsanaei/3x-ui:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
     container_name: 3x-ui
-    hostname: yourhostname
+    hostname: my-3x-ui
     volumes:
       - $PWD/db/:/etc/x-ui/
       - $PWD/cert/:/root/cert/
